@@ -1,6 +1,8 @@
+import 'package:flutter/material.dart';
+
+import 'package:devtools_flutter/presentation/screens/jank_frame_screen.dart';
 import 'package:devtools_flutter/presentation/screens/jank_screen.dart';
 import 'package:devtools_flutter/presentation/screens/layout_screen.dart';
-import 'package:flutter/material.dart';
 
 class DashBoard extends StatelessWidget {
   final contoller = PageController(initialPage: 1);
@@ -12,6 +14,7 @@ class DashBoard extends StatelessWidget {
       children: [
         LayoutInspector(),
         Jank(),
+        JankFrame(),
       ],
     );
   }
