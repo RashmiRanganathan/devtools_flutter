@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 class LayoutInspector extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Scaffold(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.amber,
         body: Card(
-          margin: EdgeInsets.symmetric(horizontal: 10, vertical: 100),
+          margin: EdgeInsets.symmetric(horizontal: 10, vertical: 200),
           child: Padding(
             padding: const EdgeInsets.all(30),
             child: Row(
