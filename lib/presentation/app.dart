@@ -1,6 +1,7 @@
-import 'package:devtools_flutter/common/route_constants.dart';
-import 'package:devtools_flutter/presentation/routes.dart';
 import 'package:flutter/material.dart';
+
+import 'package:devtools_flutter/common/constants/route_constants.dart';
+import 'package:devtools_flutter/presentation/routes.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       routes: Routes.getAll(),
-      initialRoute: RouteList.layoutInspector,
+      initialRoute: RouteList.inital,
     );
   }
 }
