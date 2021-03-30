@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'package:devtools_flutter/presentation/screens/network_images.dart';
 import 'package:devtools_flutter/presentation/screens/jank_frame_screen.dart';
 import 'package:devtools_flutter/presentation/screens/jank_screen.dart';
 import 'package:devtools_flutter/presentation/screens/layout_screen.dart';
 
 class DashBoard extends StatelessWidget {
-  final contoller = PageController(initialPage: 1);
+  final contoller = PageController(initialPage: 0);
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +16,7 @@ class DashBoard extends StatelessWidget {
         LayoutInspector(),
         Jank(),
         JankFrame(),
+        NetworkList(),
       ],
     );
   }

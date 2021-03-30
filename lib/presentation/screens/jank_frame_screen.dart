@@ -36,6 +36,7 @@ class _JankFrameState extends State<JankFrame> {
 
   static int _fibo(int index) {
     if (index <= 1) {
+      print('INFO');
       return index;
     } else {
       return _fibo(index - 1) + _fibo(index - 2);
